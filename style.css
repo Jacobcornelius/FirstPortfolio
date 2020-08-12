@@ -1,0 +1,352 @@
+/*General Styling*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.4;
+	color: #333;
+	overflow-x: hidden;
+	background-image: url(../images/background.jpg);
+	background-position: cover;
+	
+}
+
+/* Utility Classes */
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+}
+
+.text-primary {
+	color: #F53155;
+}
+.bg-light {
+	background: #BDBDBD;
+	color: #333;
+}
+
+.bg-dark {
+	background: black;
+	color: #fff;
+}
+/* Navbar */
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	background: #333;
+	color: #fff;
+	padding: 1.5rem 8rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	border-bottom: 3px solid #F53155;
+}
+
+#navbar ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+
+}
+
+#navbar h2 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#navbar li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 1rem;
+	font-size: 1.3rem;
+	margin: 0 0.5rem;
+	border-radius: 5px;	
+	transition: background-color 0.3s;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+#navbar li a:hover {
+	background-color: #F53155;
+}
+
+/* Showcase Area */
+#showcase {
+	background: url(../images/background.jpg) no-repeat center center/cover;
+	height:81.7vh;
+
+}
+
+img {
+	width: 100%;
+	height: 70%;
+	position: cover;
+}
+
+.showcase-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	position: absolute;
+	top: 81px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+
+}
+
+.showcase-content h1 {
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+
+.showcase-content .btn {
+	font-size: 1.5rem;
+	padding: 1rem 10rem;
+}
+
+.showcase-content .btn:hover {
+	background: #F53155;
+	color: #fff;
+}
+
+.btn {
+	color: #F53155;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 1px solid #F53155;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+/* Section: About */
+
+#about {
+	padding: 5rem 0;
+}
+
+#about h2, #work h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+
+#about h3{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+#about p.lead {
+	margin-bottom: 1rem;
+}
+
+#about .about-content {
+	display: flex;
+}
+
+#about .about-text,
+#about .about-image {
+	flex: 1;
+}
+
+#about .about-text {
+	text-align: justify;
+}
+
+#about .about-image img {
+	display: block;
+	margin-left: auto;
+	width: 75%;
+	border-radius: 40%;
+	margin-top: 60px;
+}
+
+/* Section: Work */
+
+#work {
+	padding: 5rem 0;
+
+}
+
+#work h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+#work .boxes {
+	display: flex;
+}
+
+#work .box {
+	background: #fff;
+    flex: 1;
+    padding: 3rem;
+    margin: 0 3rem;
+    border-radius: 80px;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-size: 1.3rem;
+}
+
+/*  Section: hobbies*/
+
+#hobbies img {
+	padding: 2rem;
+	height: 25%;
+	width: 25%;
+}
+
+#hobbies h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	color: grey;
+}
+
+#hobbies .boxes {
+	display: flex;
+	flex-direction: column;
+}
+
+#hobbies .box {
+	background: rgba(54,147,255,0.7);
+	display: flex;
+	padding: 2rem;
+	align-items: center;
+	border-radius: 15px;
+}
+
+#hobbies .box:first-child, #hobbies .box:nth-child(2) {
+	margin-bottom: 3rem;
+}
+
+#hobbies .box img {
+	border-radius: 50%;
+	margin-right: 2rem;
+}
+
+#hobbies p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+/* Section: Contact */
+
+#contact {
+	padding: 5rem 0;
+	background-color: black;
+}
+
+#contact h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 8rem;
+	color: white;
+}
+
+#contact h3 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 3rem 0;
+	margin-top: 5rem;
+}
+
+#contact .form-box {
+	background: #fff;
+	padding: 3rem;
+	box-shadow: 2px 2px 5px #d1d1d1;
+	border-radius: 10px;
+	
+}
+
+#contact .form-group {
+	margin-bottom: 2rem;
+
+}
+
+#contact .form-group label {
+	display: block;
+	margin-bottom: 0.5rem;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 1.1rem;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+	width: 80%;
+	margin-left: 10%;
+	font-size: 1.3rem;
+	padding: 1rem;
+	border: 0.5px solid #333;
+	border-radius: 5px;
+}
+
+#contact from-group textarea {
+    font-family: Arial, sans-serif;
+}
+
+#contact .contact-btn {
+	width: 80%;
+	margin-left: 10%;
+	display: inline-block;
+	padding: 1rem 3rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	background: #F53155;
+	color: #fff;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#contact .contact-btn:hover {
+	background: #0378ff;
+}
+
+#contact .form-container {
+	position: relative;
+}
+
+#contact .mail-icon {
+	font-size: 5rem;
+	
+	color: #F53155;
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 100%;
+	position: absolute;
+	top: -1%;
+	left: 43%;
+}
+
+/* Footer */
+
+footer {
+	padding: 2.5rem;
+}
+
+footer p {
+	text-align: center;
+}
